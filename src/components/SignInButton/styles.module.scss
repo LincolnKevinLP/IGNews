@@ -1,0 +1,33 @@
+.SignInButton {
+    height: 3rem;  //altura
+    border-radius: 3rem; //arredondamento de bordas
+    background: var(--gray-850); //cor de fundo do botao
+    border: 0; //nivel de borda
+    padding: 0 1.5rem; //preenchimento de espaço nas laterais e altura
+    
+    display: flex; //alinhamento na ordem
+    align-items: center; //alinhamento
+    justify-content: center; //alinhar ao centro
+
+    color: var(--white); //cor das letras 
+    font-weight: bold; //deixar a fonte em negrito
+    
+    svg { //icone
+        width: 20px; //largura
+        height: 20px; //altura
+    }
+
+    svg:first-child { //first child significa o primeiro
+        margin-right: 1rem;
+    }
+
+    svg.closeIcon {
+        margin-left: 1rem; //distancia do X e do nome do usario
+    }
+
+    transition: filter 0.2s; // o tempo que fica mudando de cor 
+
+    &:hover { //quando passa o mouse por cima ele muda de cor
+        filter: brightness(0.8);
+    }
+}
